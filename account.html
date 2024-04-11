@@ -1,4 +1,562 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Account</title><link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/main.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script defer="defer" src="js/main.js"></script></head><body><div class="wrapper"><aside class="sidebar"><div class="sidebar__logo"><a href="#" class="logo"><img src="./img/logo-aside.svg" alt="logo"></a></div><nav class="sidebar__nav nav"><ul class="nav__list"><li class="nav__item nav__item--account"><a href="#" class="nav__link active"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#account-icon"></use></svg></a></li><li class="nav__item nav__item--history"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#history-icon"></use></svg></a></li><li class="nav__item nav__item--swap"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#swap-icon"></use></svg></a></li><li class="nav__item nav-icon--stake"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#stake-icon"></use></svg></a></li><li class="nav__item nav__item--faq"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#faq-icon"></use></svg></a></li></ul><ul class="nav__list nav__list--settings"><li class="nav__item"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#settings-icon"></use></svg></a></li><li class="nav__item"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#exit-icon"></use></svg></a></li></ul></nav></aside><div class="page"><header class="header"><a href="#" class="header__logo"><img src="./img/logo-aside.svg" alt="logo"></a><div class="header__search"><form action="#" class="search-form"><button type="submit" class="search-form__btn"><svg class="search-form__btn-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button> <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Assets"></form></div><div class="header__actions"><button class="notification"><svg class="notification__icon"><use xlink:href="img/sprite.svg#notification"></use></svg></button> <button class="user"><img class="user__img" src="./img/ava.png" alt="ava"></button></div></header><main class="main account"><section class="account__analytics analytics"><div class="analytics__list"><div class="analytics__balance balance-total card-white"><div class="balance-total__top"><div class="balance-total__info"><h2 class="balance-total__title title">Total Balance</h2><div class="balance-total__amount">$69 756.21</div><p class="balance-total__text">Dignissim facilisi dignissim viverra feugiat. Non vitae volutpat eu vitae.</p></div><div class="balance-total__graph"><img class="balance-total__image" src="./img/line-balance.svg" alt="line"></div></div><div class="balance-total__actions"><button class="balance-total__button button"><svg class="button__icon"><use xlink:href="img/sprite.svg#arrow-send"></use></svg> <span class="button__text">Send</span></button> <button class="balance-total__button button button--blue"><svg class="button__icon"><use xlink:href="img/sprite.svg#arrow-recieve"></use></svg> <span class="button__text">Recieve</span></button> <button class="balance-total__button button button--transparent"><svg class="button__icon button__icon--blue"><use xlink:href="img/sprite.svg#swap-icon"></use></svg> <span class="button__text">Swap</span></button> <button class="balance-total__button button button--transparent"><svg class="button__icon button__icon--blue"><use xlink:href="img/sprite.svg#stake-icon"></use></svg> <span class="button__text">Stake</span></button></div></div><div class="analytics__overview overview card-white"><div class="overview__top"><h2 class="overview__title title">Overview</h2><ul class="overview__labes"><li class="overview__label overview__label--green">BTC</li><li class="overview__label overview__label--blue">ETH</li></ul></div><div class="overview__graph"><img class="overview__image" src="./img/graph.jpg" alt="graph"></div></div><div class="analytics__statistic statistic card-white"><div class="statistic__left"><h2 class="statistic__title title">Statistic</h2><ul class="statistic__items"><li class="statistic__item statistic__item--green"><div class="statistic__item-usd">$37 456.12</div><div class="statistic__item-token">0.597 BTC</div></li><li class="statistic__item statistic__item--blue"><div class="statistic__item-usd">$21 863.79</div><div class="statistic__item-token">4.652 ETH</div></li><li class="statistic__item statistic__item--turquoise"><div class="statistic__item-usd">$11 454.10</div><div class="statistic__item-token">168.548 BNB</div></li></ul></div><div class="statistic__graph"><img class="statistic__chart" src="./img/graph2.svg" alt="graph"> <img class="statistic__circle" src="./img/circle.svg" alt="graph"><div class="statistic__graph-text">$69 756.21</div></div></div></div></section><!-- <div class="ccc">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Account</title>
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <div class="sidebar__logo">
+    <a href="#" class="logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+  </div>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#account-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--history">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#history-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav__item--swap">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#swap-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav-icon--stake">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#stake-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--faq">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#faq-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exit-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</aside>
+
+    <div class="page">
+      <header class="header">
+
+      <a href="#" class="header__logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+
+  <div class="header__search">
+    <form action="#" class="search-form">
+      <button type="submit" class="search-form__btn">
+        <svg class="search-form__btn-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Assets">
+    </form>
+  </div>
+  <div class="header__actions">
+    <button class="notification">
+      <svg class="notification__icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </button>
+    <button class="user">
+      <img class="user__img" src="./img/ava.png" alt="ava">
+    </button>
+  </div>
+
+</header>
+
+      <main class="main account">
+        <section class="account__analytics analytics">
+          <div class="analytics__list">
+            <div class="analytics__balance balance-total card-white ">
+              <div class="balance-total__top">
+                <div class="balance-total__info">
+                  <h2 class="balance-total__title title">Total Balance</h2>
+                  <div class="balance-total__amount">$69 756.21</div>
+                  <p class="balance-total__text">Dignissim facilisi dignissim viverra feugiat. Non vitae volutpat eu
+                    vitae.</p>
+                </div>
+                <div class="balance-total__graph">
+                  <img class="balance-total__image" src="./img/line-balance.svg" alt="line">
+                </div>
+              </div>
+              <div class="balance-total__actions">
+                <button class="balance-total__button button">
+                  <svg class="button__icon ">
+                    <use xlink:href="img/sprite.svg#arrow-send"></use>
+                  </svg>
+                  <span class="button__text">Send</span>
+                </button>
+                <button class="balance-total__button button button--blue">
+                  <svg class="button__icon ">
+                    <use xlink:href="img/sprite.svg#arrow-recieve"></use>
+                  </svg>
+                  <span class="button__text">Recieve</span>
+                </button>
+                <button class="balance-total__button button button--transparent">
+                  <svg class="button__icon button__icon--blue">
+                    <use xlink:href="img/sprite.svg#swap-icon"></use>
+                  </svg>
+                  <span class="button__text">Swap</span>
+                </button>
+                <button class="balance-total__button button button--transparent">
+                  <svg class="button__icon button__icon--blue">
+                    <use xlink:href="img/sprite.svg#stake-icon"></use>
+                  </svg>
+                  <span class="button__text">Stake</span>
+                </button>
+              </div>
+            </div>
+            <div class="analytics__overview overview card-white ">
+              <div class="overview__top">
+                <h2 class="overview__title title">Overview</h2>
+                <ul class="overview__labes">
+                  <li class="overview__label overview__label--green">BTC</li>
+                  <li class="overview__label overview__label--blue">ETH</li>
+                </ul>
+              </div>
+              <div class="overview__graph">
+                <img class="overview__image" src="./img/graph.jpg" alt="graph">
+              </div>
+            </div>
+            <div class="analytics__statistic statistic card-white ">
+              <div class="statistic__left">
+                <h2 class="statistic__title title">Statistic</h2>
+                <ul class="statistic__items">
+                  <li class="statistic__item statistic__item--green">
+                    <div class="statistic__item-usd">$37 456.12</div>
+                    <div class="statistic__item-token">0.597 BTC</div>
+                  </li>
+                  <li class="statistic__item statistic__item--blue">
+                    <div class="statistic__item-usd">$21 863.79</div>
+                    <div class="statistic__item-token">4.652 ETH</div>
+                  </li>
+                  <li class="statistic__item statistic__item--turquoise">
+                    <div class="statistic__item-usd">$11 454.10</div>
+                    <div class="statistic__item-token">168.548 BNB</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="statistic__graph">
+                <img class="statistic__chart" src="./img/graph2.svg" alt="graph">
+
+                <img class="statistic__circle" src="./img/circle.svg" alt="graph">
+                <div class="statistic__graph-text">$69 756.21</div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="ccc">
 <canvas class="canvas" id="myChart"></canvas>
 <span class="hh">6759908909</span>
-        </div> --><!-- <canvas id="myChart2"></canvas> --><div class="account__tables"><section class="account__assets assets table card-white"><div class="assets__caption table__caption"><h2 class="assets__title title">My Assets</h2><button class="assets__button table__caption-btn button button--blue"><span class="table__caption-text">Add Asset</span></button></div><div class="assets__content table__content"><div class="table__row"><ul class="assets__items table__items table__items--title"><li class="table__item">Cryptocurrency</li><li class="table__item hidden-768">Price</li><li class="table__item">Network</li><li class="table__item">Amount</li><li class="table__item">in Stake</li></ul></div><div data-simplebar class="assets__body table__body simplebar"><div class="table__row"><ul class="assets__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/bitcoin.svg" alt="bitcoin"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Bitcoin</p><p class="cryptocurrency__name-short">(BTC)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/tether.svg" alt="tether"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Tether</p><p class="cryptocurrency__name-short">(USDT)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$1.01</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$1.01</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$0.502</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/ethereum.svg" alt="ethereum"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Etherum</p><p class="cryptocurrency__name-short">(ETH)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/tron.svg" alt="tron"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Tron</p><p class="cryptocurrency__name-short">(TRX)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/bnb.svg" alt="bnb"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">BNB</p><p class="cryptocurrency__name-short">(BNB)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-crypto"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/ripple.svg" alt="ripple"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Ripple</p><p class="cryptocurrency__name-short">(XPR)</p></div></div><div class="table__item-prc">+23%</div></div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/tron.svg" alt="tron"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Tron</p><p class="cryptocurrency__name-short">(TRX)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/bnb.svg" alt="bnb"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">BNB</p><p class="cryptocurrency__name-short">(BNB)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div><div class="table__row"><ul class="assets__items table__items table__items"><li class="table__item"><div class="table__item-cryptocurrency"><div class="cryptocurrency"><div class="cryptocurrency__image"><img class="cryptocurrency__icon" src="./img/cryptocurrency/ripple.svg" alt="ripple"></div><div class="cryptocurrency__text"><p class="cryptocurrency__name">Ripple</p><p class="cryptocurrency__name-short">(XPR)</p></div></div><div class="table__item-prc">+23%</div></div></li><li class="table__item hidden-768">$68000</li><li class="table__item">N-chain</li><li class="table__item flex-col"><span class="table__item-amount">1</span> <span class="table__item-amount-usd">$68000</span></li><li class="table__item flex-col"><span class="table__item-stake">0.5</span> <span class="table__item-stake-usd">$68000</span></li></ul></div></div></div></section><section class="account__last-transactions last-transactions card-white table"><div class="last-transactions__caption table__caption"><h2 class="last-transactions__title title">Last Transactions</h2></div><div class="last-transactions__content table__content"><div class="table__row"><ul class="last-transactions__items table__items table__items--title"><li class="table__item">Type</li><li class="table__item">Date</li><li class="table__item">Amount</li></ul></div><div data-simplebar class="table__body assets__body simplebar"><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Send</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">500 XPR</a></li></ul></div><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Recieve</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">1 SOL</a></li></ul></div><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Swap</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">50 DOGE</a></li></ul></div><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Stake</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">0.5 ETH</a></li></ul></div><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Send</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">500 Recieve</a></li></ul></div><div class="table__row"><ul class="last-transactions__items table__items table__items"><li class="table__item">Swap</li><li class="table__item">01.01.24</li><li class="table__item flex-col"><a href="#" class="table__item-link">500 XPR</a></li></ul></div></div></div></section></div></main></div></div></body></html>
+        </div> -->
+
+        <!-- <canvas id="myChart2"></canvas> -->
+        <div class="account__tables">
+          <section class="account__assets assets table card-white ">
+            <div class="assets__caption table__caption">
+              <h2 class="assets__title title">My Assets</h2>
+              <button class="assets__button table__caption-btn button button--blue">
+                <span class="table__caption-text">Add Asset</span>
+              </button>
+            </div>
+            <div class="assets__content table__content">
+              <div class="table__row">
+                <ul class="assets__items table__items table__items--title">
+                  <li class="table__item">Cryptocurrency</li>
+                  <li class="table__item hidden-768">Price</li>
+                  <li class="table__item">Network</li>
+                  <li class="table__item">Amount</li>
+                  <li class="table__item">in Stake</li>
+                </ul>
+              </div>
+              <div data-simplebar class="assets__body table__body simplebar">
+                <div class="table__row">
+                  <ul class="assets__items table__items ">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/bitcoin.svg" alt="bitcoin">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Bitcoin</p>
+                            <p class="cryptocurrency__name-short">(BTC)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/tether.svg" alt="tether">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Tether</p>
+                            <p class="cryptocurrency__name-short">(USDT)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$1.01</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$1.01</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$0.502</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/ethereum.svg" alt="ethereum">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Etherum</p>
+                            <p class="cryptocurrency__name-short">(ETH)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/tron.svg" alt="tron">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Tron</p>
+                            <p class="cryptocurrency__name-short">(TRX)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/bnb.svg" alt="bnb">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">BNB</p>
+                            <p class="cryptocurrency__name-short">(BNB)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-crypto">
+                        <div class="table__item-cryptocurrency">
+                          <div class="cryptocurrency">
+                            <div class="cryptocurrency__image">
+                              <img class="cryptocurrency__icon" src="./img/cryptocurrency/ripple.svg" alt="ripple">
+                            </div>
+                            <div class="cryptocurrency__text">
+                              <p class="cryptocurrency__name">Ripple</p>
+                              <p class="cryptocurrency__name-short">(XPR)</p>
+                            </div>
+                          </div>
+                          <div class="table__item-prc">+23%</div>
+                        </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/tron.svg" alt="tron">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Tron</p>
+                            <p class="cryptocurrency__name-short">(TRX)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/bnb.svg" alt="bnb">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">BNB</p>
+                            <p class="cryptocurrency__name-short">(BNB)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="assets__items table__items table__items">
+                    <li class="table__item">
+                      <div class="table__item-cryptocurrency">
+                        <div class="cryptocurrency">
+                          <div class="cryptocurrency__image">
+                            <img class="cryptocurrency__icon" src="./img/cryptocurrency/ripple.svg" alt="ripple">
+                          </div>
+                          <div class="cryptocurrency__text">
+                            <p class="cryptocurrency__name">Ripple</p>
+                            <p class="cryptocurrency__name-short">(XPR)</p>
+                          </div>
+                        </div>
+                        <div class="table__item-prc">+23%</div>
+                      </div>
+                    </li>
+                    <li class="table__item hidden-768">$68000</li>
+                    <li class="table__item">N-chain</li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-amount">1</span>
+                      <span class="table__item-amount-usd">$68000</span>
+                    </li>
+                    <li class="table__item flex-col">
+                      <span class="table__item-stake">0.5</span>
+                      <span class="table__item-stake-usd">$68000</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="account__last-transactions last-transactions card-white  table">
+            <div class="last-transactions__caption table__caption">
+              <h2 class="last-transactions__title title">Last Transactions</h2>
+            </div>
+            <div class="last-transactions__content table__content ">
+              <div class="table__row">
+                <ul class="last-transactions__items table__items table__items--title">
+                  <li class="table__item">Type</li>
+                  <li class="table__item">Date</li>
+                  <li class="table__item">Amount</li>
+                </ul>
+              </div>
+              <div data-simplebar class="table__body assets__body simplebar">
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Send</li>
+                    <li class="table__item">01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">500 XPR</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Recieve</li>
+                    <li class="table__item">01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">1 SOL</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Swap</li>
+                    <li class="table__item">01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">50 DOGE</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Stake</li>
+                    <li class="table__item">01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">0.5 ETH</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Send</li>
+                    <li class="table__item">01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">500
+                        Recieve</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="table__row">
+                  <ul class="last-transactions__items table__items table__items">
+                    <li class="table__item">Swap</li>
+                    <li class="table__item">
+                      01.01.24</li>
+                    <li class="table__item flex-col">
+                      <a href="#" class="table__item-link">500
+                        XPR</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
