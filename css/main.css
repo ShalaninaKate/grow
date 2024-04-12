@@ -3608,7 +3608,9 @@ select:focus-visible + .select__item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: var(--base-white);
 }
 @media (max-width: 48em) {
@@ -4514,6 +4516,7 @@ select:focus-visible + .select__item {
 @media (max-width: 48em) {
   .settings__actions {
     min-height: 100%;
+    display: block;
   }
 }
 .settings__actions-column {
