@@ -1,4 +1,297 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Swap</title><link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/main.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script defer="defer" src="js/main.js"></script></head><body><div class="wrapper"><aside class="sidebar"><div class="sidebar__logo"><a href="#" class="logo"><img src="./img/logo-aside.svg" alt="logo"></a></div><nav class="sidebar__nav nav"><ul class="nav__list"><li class="nav__item nav__item--account"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#account-icon"></use></svg></a></li><li class="nav__item nav__item--history"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#history-icon"></use></svg></a></li><li class="nav__item nav__item--swap"><a href="#" class="nav__link active"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#swap-icon"></use></svg></a></li><li class="nav__item nav-icon--stake"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#stake-icon"></use></svg></a></li><li class="nav__item nav__item--faq"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#faq-icon"></use></svg></a></li></ul><ul class="nav__list nav__list--settings"><li class="nav__item"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#settings-icon"></use></svg></a></li><li class="nav__item"><a href="#" class="nav__link"><svg class="nav__link-icon"><use xlink:href="img/sprite.svg#exit-icon"></use></svg></a></li></ul></nav></aside><div class="page"><header class="header"><a href="#" class="header__logo"><img src="./img/logo-aside.svg" alt="logo"></a><div class="header__search"><form action="#" class="search-form"><button type="submit" class="search-form__btn"><svg class="search-form__btn-icon"><use xlink:href="img/sprite.svg#search"></use></svg></button> <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Assets"></form></div><div class="header__actions"><button class="notification"><svg class="notification__icon"><use xlink:href="img/sprite.svg#notification"></use></svg></button> <button class="user"><img class="user__img" src="./img/ava.png" alt="ava"></button></div></header><main class="main"><div class="swap"><div class="swap__left card-white"><h2 class="swap__left-title title">Swap</h2><div class="swap__form-inner card-blue"><form action="#" class="swap__form form"><div class="swap__form-from"><h3 class="swap__form-title">From</h3><div class="swap__form-items"><div class="swap__form-row col-2"><div class="swap__form-item form__item"><div class="swap__form-label form__label">Network</div><select name="network" class="form__select"><option data-asset="./img/svg/share.svg" value="1" selected="selected">N-chain</option><option data-asset="./img/svg/share.svg" value="2">N-chain</option><option data-asset="./img/svg/share.svg" value="3">N-chain</option></select></div><div class="form__item"><div class="swap__form-label form__label">Token</div><select name="network" class="form__select"><option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected="selected">Bitcoin (BTC)</option><option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option><option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option><option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)</option></select></div></div><div class="swap__form-row"><label for="formAmount" class="swap__form-label form__label">Amount</label><div class="form__input input input--amount"><div class="input__img"><img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token"></div><input id="formAmount" type="text" value="0.000497" class="input__control"> <span class="input__text">BTC</span></div><div class="form__label-bottom col-2"><div class="form__label-bottom-text">USDT equiv: 1000 UDST</div><a href="" class="form__label-bottom-link">All</a></div></div></div></div><div class="swap__form-separation separation"><div class="separation__image"><svg class="separation__icon"><use xlink:href="img/sprite.svg#swap-icon"></use></svg></div></div><div class="swap__form-to"><h3 class="swap__form-title">To</h3><div class="swap__form-items"><div class="swap__form-row col-2"><div class="form__item"><div class="swap__form-label form__label">Network</div><select name="network" class="form__select"><option data-asset="./img/svg/share.svg" value="1" selected="selected">N-chain</option><option data-asset="./img/svg/share.svg" value="2">N-chain</option><option data-asset="./img/svg/share.svg" value="3">N-chain</option></select></div><div class="form__item"><div class="swap__form-label form__label">Token</div><select name="network" class="form__select"><option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC">Bitcoin (BTC)</option><option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option><option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option><option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum" selected="selected">Ethereum (ETH)</option></select></div></div><div class="swap__form-row"><label for="formAmount" class="swap__form-label form__label">Amount</label><div class="form__input input input--amount"><div class="input__img"><img class="input__img-icon" src="./img/cryptocurrency/ethereum.svg" alt="token"></div><input id="formAmount" type="text" value="4.78" class="input__control"> <span class="input__text">ETH</span></div><div class="form__label-bottom col-2"><div class="form__label-bottom-text">USDT equiv: 1000 UDST</div><a href="" class="form__label-bottom-link">All</a></div></div></div></div><div class="swap__form-separation separation"></div><div class="swap__form-total"><div class="swap__form-total-row"><p class="swap__form-total-text">Expected Output</p><p class="swap__form-total-amount">4.7750 ETH</p></div><div class="swap__form-total-row"><p class="swap__form-total-text">Expected Output</p><p class="swap__form-total-amount">4.7750 ETH</p></div></div><div class="swap__form-separation separation"></div><button class="swap__form-button button">Swap</button></form></div></div><div class="swap__right"><section class="swap__analytics swap-analytics"><div class="swap-analytics__list"><div class="swap-analytics__overview overview card-white"><div class="overview__top"><h2 class="overview__title title">Overview</h2><ul class="overview__labes"><li class="overview__label overview__label--green">BTC</li><li class="overview__label overview__label--blue">ETH</li></ul></div><div class="overview__graph"><img class="overview__image" src="./img/graph.jpg" alt="graph"></div></div><div class="swap-analytics__statistic statistic card-white"><div class="statistic__left"><h2 class="statistic__title title">Statistic</h2><ul class="statistic__items"><li class="statistic__item statistic__item--green"><div class="statistic__item-usd">$37 456.12</div><div class="statistic__item-token">0.597 BTC</div></li><li class="statistic__item statistic__item--blue"><div class="statistic__item-usd">$21 863.79</div><div class="statistic__item-token">4.652 ETH</div></li><li class="statistic__item statistic__item--turquoise"><div class="statistic__item-usd">$11 454.10</div><div class="statistic__item-token">168.548 BNB</div></li></ul></div><div class="statistic__graph"><img class="statistic__chart" src="./img/graph2.svg" alt="graph"> <img class="statistic__circle" src="./img/circle.svg" alt="graph"><div class="statistic__graph-text">$69 756.21</div></div></div></div></section><section class="swap__table swap-table table card-white"><div class="swap-table__caption table__caption"><h2 class="swap-table__title title">Last Transactions</h2></div><div class="swap-table__content table__content"><div class="table__row"><ul class="swap-table__items table__items table__items--title"><li class="table__item">Type</li><li class="table__item">Date</li><li class="table__item">Amount</li><li class="table__item hidden">USDT Equiv</li><li class="table__item"><div class="table__item-address-title"><span>Payment</span> Address</div></li><li class="table__item hidden">Address Book Detail</li><li class="table__item"></li></ul></div><div class="table__body-empty"><img class="table__body-empty-icon" src="./img/swap.svg" alt="icon"><div class="table__body-empty--text">You have not completed the swap operation yet</div></div><!-- <div data-simplebar class="swap-table__body table__body simplebar">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Swap</title>
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <div class="sidebar__logo">
+    <a href="#" class="logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+  </div>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#account-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--history">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#history-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav__item--swap">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#swap-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav-icon--stake">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#stake-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--faq">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#faq-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exit-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</aside>
+
+    <div class="page">
+      <header class="header">
+  <a href="#" class="header__logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+  <div class="header__search">
+    <form action="#" class="search-form">
+      <button type="submit" class="search-form__btn">
+        <svg class="search-form__btn-icon">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <input class="search-form__input" autocomplete="off" type="text" placeholder="Search Assets">
+    </form>
+  </div>
+  <div class="header__actions">
+    <button class="notification">
+      <svg class="notification__icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </button>
+    <button class="user">
+      <img class="user__img" src="./img/ava.png" alt="ava">
+    </button>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="swap">
+          <div class="swap__left card-white">
+            <h2 class="swap__left-title title">Swap</h2>
+            <div class="swap__form-inner card-blue">
+              <form action="#" class="swap__form form">
+                <div class="swap__form-from">
+                  <h3 class="swap__form-title">From</h3>
+                  <div class="swap__form-items">
+                    <div class="swap__form-row col-2">
+                      <div class="swap__form-item form__item">
+                        <div class="swap__form-label form__label">Network</div>
+                        <select name="network" class="form__select">
+                          <option data-asset="./img/svg/share.svg" value="1" selected>N-chain
+                          </option>
+                          <option data-asset="./img/svg/share.svg" value="2">N-chain</option>
+                          <option data-asset="./img/svg/share.svg" value="3">N-chain</option>
+                        </select>
+                      </div>
+                      <div class="form__item">
+                        <div class="swap__form-label form__label">Token</div>
+                        <select name="network" class="form__select">
+                          <option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected>Bitcoin (BTC)
+                          </option>
+                          <option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option>
+                          <option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option>
+                          <option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="swap__form-row">
+                      <label for="formAmount" class="swap__form-label form__label">Amount</label>
+                      <div class="form__input input input--amount">
+                        <div class="input__img">
+                          <img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token">
+                        </div>
+                        <input id="formAmount" type="text" value="0.000497" class="input__control">
+                        <span class="input__text">BTC</span>
+                      </div>
+                      <div class="form__label-bottom col-2">
+                        <div class="form__label-bottom-text">USDT equiv: 1000 UDST</div>
+                        <a href="" class="form__label-bottom-link">All</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swap__form-separation separation">
+                  <div class="separation__image">
+                    <svg class="separation__icon">
+                      <use xlink:href="img/sprite.svg#swap-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="swap__form-to">
+                  <h3 class="swap__form-title">To</h3>
+                  <div class="swap__form-items">
+                    <div class="swap__form-row col-2">
+                      <div class="form__item">
+                        <div class="swap__form-label form__label">Network</div>
+                        <select name="network" class="form__select">
+                          <option data-asset="./img/svg/share.svg" value="1" selected>N-chain
+                          </option>
+                          <option data-asset="./img/svg/share.svg" value="2">N-chain</option>
+                          <option data-asset="./img/svg/share.svg" value="3">N-chain</option>
+                        </select>
+                      </div>
+                      <div class="form__item">
+                        <div class="swap__form-label form__label">Token</div>
+                        <select name="network" class="form__select">
+                          <option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC">Bitcoin (BTC)
+                          </option>
+                          <option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option>
+                          <option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option>
+                          <option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum" selected>Ethereum
+                            (ETH)
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="swap__form-row">
+                      <label for="formAmount" class="swap__form-label form__label">Amount</label>
+                      <div class="form__input input input--amount">
+                        <div class="input__img">
+                          <img class="input__img-icon" src="./img/cryptocurrency/ethereum.svg" alt="token">
+                        </div>
+                        <input id="formAmount" type="text" value="4.78" class="input__control">
+                        <span class="input__text">ETH</span>
+                      </div>
+
+                      <div class="form__label-bottom col-2">
+                        <div class="form__label-bottom-text">USDT equiv: 1000 UDST</div>
+                        <a href="" class="form__label-bottom-link">All</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swap__form-separation separation"></div>
+                <div class="swap__form-total">
+                  <div class="swap__form-total-row">
+                    <p class="swap__form-total-text">Expected Output</p>
+                    <p class="swap__form-total-amount">4.7750 ETH</p>
+                  </div>
+                  <div class="swap__form-total-row">
+                    <p class="swap__form-total-text">Expected Output</p>
+                    <p class="swap__form-total-amount">4.7750 ETH</p>
+                  </div>
+                </div>
+                <div class="swap__form-separation separation"></div>
+                <button class="swap__form-button button">Swap</button>
+              </form>
+            </div>
+          </div>
+          <div class="swap__right">
+            <section class="swap__analytics swap-analytics">
+              <div class="swap-analytics__list">
+                <div class="swap-analytics__overview overview card-white ">
+                  <div class="overview__top">
+                    <h2 class="overview__title title">Overview</h2>
+                    <ul class="overview__labes">
+                      <li class="overview__label overview__label--green">BTC</li>
+                      <li class="overview__label overview__label--blue">ETH</li>
+                    </ul>
+                  </div>
+                  <div class="overview__graph">
+                    <img class="overview__image" src="./img/graph.jpg" alt="graph">
+                  </div>
+                </div>
+                <div class="swap-analytics__statistic statistic card-white ">
+                  <div class="statistic__left">
+                    <h2 class="statistic__title title">Statistic</h2>
+                    <ul class="statistic__items">
+                      <li class="statistic__item statistic__item--green">
+                        <div class="statistic__item-usd">$37 456.12</div>
+                        <div class="statistic__item-token">0.597 BTC</div>
+                      </li>
+                      <li class="statistic__item statistic__item--blue">
+                        <div class="statistic__item-usd">$21 863.79</div>
+                        <div class="statistic__item-token">4.652 ETH</div>
+                      </li>
+                      <li class="statistic__item statistic__item--turquoise">
+                        <div class="statistic__item-usd">$11 454.10</div>
+                        <div class="statistic__item-token">168.548 BNB</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="statistic__graph">
+                    <img class="statistic__chart" src="./img/graph2.svg" alt="graph">
+                    <img class="statistic__circle" src="./img/circle.svg" alt="graph">
+                    <div class="statistic__graph-text">$69 756.21</div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+            <section class="swap__table swap-table table card-white ">
+              <div class="swap-table__caption table__caption">
+                <h2 class="swap-table__title title">Last Transactions</h2>
+              </div>
+              <div class="swap-table__content table__content">
+                <div class="table__row">
+                  <ul class="swap-table__items table__items table__items--title">
+                    <li class="table__item">Type</li>
+                    <li class="table__item">Date</li>
+                    <li class="table__item">Amount</li>
+                    <li class="table__item hidden">USDT Equiv</li>
+                    <li class="table__item">
+                      <div class="table__item-address-title"><span>Payment</span> Address</div>
+                    </li>
+                    <li class="table__item hidden">Address Book Detail</li>
+                    <li class="table__item"></li>
+                  </ul>
+                </div>
+                <div class="table__body-empty">
+                  <img class="table__body-empty-icon" src="./img/swap.svg" alt="icon">
+                  <div class="table__body-empty--text">You have not completed the swap operation yet</div>
+                </div>
+                <!-- <div data-simplebar class="swap-table__body table__body simplebar">
                   <div class="table__row">
                     <ul class="swap-table__items table__items ">
                       <li class="table__item">Send</li>
@@ -242,4 +535,17 @@
                     </ul>
                   </div>
 
-                </div> --></div></section></div></div></main></div></div></body></html>
+                </div> -->
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

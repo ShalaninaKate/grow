@@ -1,4 +1,464 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Модальные окна</title><link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/main.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script defer="defer" src="js/main.js"></script></head><body><div class="container-modal"><div class="buttons"><button class="button" data-path="send" data-animation="fadeInUp">Send</button> <button class="button" data-path="recieve" data-animation="fadeInUp">Recieve</button> <button class="button" data-path="swap" data-animation="fadeInUp">Swap</button> <button class="button" data-path="stake" data-animation="fadeInUp">Stake</button></div><div class="modal"><!-- Send transaction --><div class="modal__container" role="dialog" aria-modal="true" data-target="send"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><form action="#" class="transaction form"><div class="transaction__title">Send transaction</div><div class="transaction__date">Date: 06.08. 2024 12.00</div><div class="transaction__items"><div class="transaction__item form__item"><div class="transaction__label form__label">From</div><div class="transaction__input form__input input"><svg class="input__icon input__icon--clip"><use xlink:href="img/sprite.svg#clip"></use></svg> <input type="text" name="" value="0x029njg847n874n48902900" class="input__control"></div></div><div class="transaction__item form__item"><div class="transaction__label form__label">To</div><div class="transaction__input form__input input"><svg class="input__icon input__icon--clip"><use xlink:href="img/sprite.svg#clip"></use></svg> <input type="text" name="" value="0x029njg847n874n48902900" class="input__control"></div></div><div class="transaction__row col-2"><div class="transaction__item form__item"><div class="transaction__label form__label">Network</div><select name="network" class="form__select form__select--border"><option data-asset="./img/svg/share.svg" value="1" selected="selected">N-chain</option><option data-asset="./img/svg/share.svg" value="2">N-chain</option><option data-asset="./img/svg/share.svg" value="3">N-chain</option></select></div><div class="transaction__item form__item"><div class="transaction__label form__label">Token</div><select name="network" class="form__select form__select--border"><option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected="selected">Bitcoin (BTC)</option><option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option><option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option><option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)</option></select></div></div><div class="transaction__row"><div class="transaction__item form__item"><label for="formAmount" class="transaction__label form__label">Amount</label><div class="transaction__input form__input input input--amount"><div class="input__img"><img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token"></div><input id="formAmount" type="text" value="0.000497" class="input__control"> <span class="input__text">BTC</span></div><div class="form__label-bottom col-2"><div class="form__label-bottom-text form__label-bottom-text--blue">Network fee: 10 TRX</div><a href="" class="form__label-bottom-link">All</a></div></div></div></div><button class="transaction__button button" data-path="authenticator" data-animation="fadeInUp">Send</button></form></div><!-- Send transaction code--><div class="modal__container" role="dialog" aria-modal="true" data-target="authenticator"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><form action="#" class="transaction form"><div class="transaction__title">Open your Google Authenticator</div><div class="transaction__authentification authentification"><label class="transaction__authentification-label authentification__label">Code</label><div class="transaction__authentification-inputs authentification__inputs"><input type="text" name="" class="authentification__input"> <input type="text" name="" class="authentification__input"> <input type="text" name="" class="authentification__input"> <input type="text" name="" class="authentification__input"> <input type="text" name="" class="authentification__input"> <input type="text" name="" class="authentification__input"></div></div><div class="transaction__actions"><button class="transaction__button button button--transparent" data-path="send" data-animation="fadeInUp">Back</button> <button class="transaction__button button" data-path="report-send" data-animation="fadeInUp">Confirm</button></div></form></div><!-- Send transaction report--><div class="modal__container" role="dialog" aria-modal="true" data-target="report-send"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><div class="transaction"><div class="transaction__title">Send transaction</div><div class="transaction__date">Date: 06.08. 2024 12.00</div><div class="transaction__report report"><div class="report__title">-1000 TRX</div><ul class="report__items"><li class="report__item"><h4 class="report__item-title">Status:</h4><p class="report__item-status report__item-status--failed">Payment failed</p></li><li class="report__item"><h4 class="report__item-title">Recipient adress:</h4><p class="report__item-text">0×029njg847n874n48902900</p></li><li class="report__item"><h4 class="report__item-title">Network fee:</h4><p class="report__item-text">10 TRX</p></li></ul></div><button class="transaction__button button">More Details</button></div></div><!-- Recieve transaction --><div class="modal__container" role="dialog" aria-modal="true" data-target="recieve"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><form action="#" class="transaction form"><div class="transaction__title">Recieve transaction</div><div class="transaction__date">Date: 06.08. 2024 12.00</div><img src="./img/qr-code.svg" class="transaction__image" alt="qr-code"><div class="transaction__items"><div class="transaction__item form__item"><div class="transaction__label form__label">Sender Address</div><div class="transaction__input form__input input"><svg class="input__icon input__icon--clip"><use xlink:href="img/sprite.svg#clip"></use></svg> <input type="text" name="" value="0x029njg847n874n48902900" class="input__control"> <button class="input__icon-btn"><svg class="input__icon input__icon--copy"><use xlink:href="img/sprite.svg#copy"></use></svg></button></div></div><div class="transaction__row col-2"><div class="transaction__item form__item"><div class="transaction__label form__label">Network</div><select name="network" class="form__select form__select--border"><option data-asset="./img/svg/share.svg" value="1" selected="selected">N-chain</option><option data-asset="./img/svg/share.svg" value="2">N-chain</option><option data-asset="./img/svg/share.svg" value="3">N-chain</option></select></div><div class="transaction__item form__item"><div class="transaction__label form__label">Token</div><select name="network" class="form__select form__select--border"><option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected="selected">Bitcoin (BTC)</option><option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option><option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option><option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)</option></select></div></div><div class="transaction__row"><div class="transaction__item form__item"><label for="formAmount" class="transaction__label form__label">Add</label><div class="transaction__input form__input input input--amount"><div class="input__img"><img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token"></div><input id="formAmount" type="text" value="0.000497" class="input__control"> <span class="input__text">BTC</span></div></div></div></div><button class="transaction__button button" data-path="report-recieve" data-animation="fadeInUp">Share</button></form></div><!-- Recieve transaction report--><div class="modal__container" role="dialog" aria-modal="true" data-target="report-recieve"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><div class="transaction"><div class="transaction__title">Send transaction</div><div class="transaction__date">Date: 06.08. 2024 12.00</div><div class="transaction__report report"><div class="report__title">+15 000 USDT</div><ul class="report__items"><li class="report__item"><h4 class="report__item-title">Status:</h4><p class="report__item-status report__item-status--progress">In Progress</p></li><li class="report__item"><h4 class="report__item-title">Recipient adress:</h4><p class="report__item-text">0×029njg847n874n48902900</p></li><li class="report__item"><h4 class="report__item-title">Network fee:</h4><p class="report__item-text">10 TRX</p></li></ul></div><button class="transaction__button button">More Details</button></div></div><!-- Swap transaction code--><div class="modal__container" role="dialog" aria-modal="true" data-target="swap"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><div class="transaction"><div class="transaction__title">Swap transaction</div><div class="transaction__date">Date: 06.08. 2024 12.00</div><ul class="transaction__amounts"><li class="transaction__amount transaction__amount--blue"><p class="transaction__amount-crypto">-0.5 BTC</p><p class="transaction__amount-usd">$ 33 551</p></li><li class="transaction__amount transaction__amount--green"><p class="transaction__amount-crypto">+9,63 ETH</p><p class="transaction__amount-usd">$ 33 607</p></li></ul><div class="transaction__report transaction__report--swap report report--swap"><ul class="report__items"><li class="report__item"><h4 class="report__item-title">Status:</h4><p class="report__item-status report__item-status--completed">Completed</p></li><li class="report__item"><h4 class="report__item-title">Exchange rate:</h4><p class="report__item-text">1,00 Bitcoin = 19,21 Ethereum</p></li><li class="report__item"><h4 class="report__item-title">Sender adress (btc):</h4><p class="report__item-text">0×029njg847n874n48902900</p></li><li class="report__item"><h4 class="report__item-title">Recipient adress:</h4><p class="report__item-text">0×029njg847n874n48902900</p></li><li class="report__item"><h4 class="report__item-title">Network fee:</h4><p class="report__item-text">0 (offchain)</p></li></ul></div><button class="transaction__button button">My Account</button></div></div><!-- New staking --><div class="modal__container" role="dialog" aria-modal="true" data-target="stake"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button> <img src="./img/logo-aside.svg" class="modal__logo"><form action="#" class="transaction form"><div class="transaction__title">Stake transaction</div><div class="transaction__interest staking-interest"><p class="staking-interest__rate">Staking interest rate: 15%</p><div class="staking-interest__date"><p class="staking-interest__start">Start: 06.08. 2024 12.00</p><spam class="staking-interest__dash">—</spam><p class="staking-interest__end">End: 06.08. 2025 12.00</p></div></div><div class="transaction__items"><div class="transaction__row col-2"><div class="transaction__item form__item"><div class="transaction__label form__label">Token</div><select name="network" class="form__select form__select--border"><option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected="selected">Bitcoin (BTC)</option><option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option><option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)</option><option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)</option></select></div><div class="transaction__item form__item"><div class="transaction__label form__label">Plan</div><select name="network" class="form__select form__select--border"><option data-asset="./img/svg/share.svg" value="1" selected="selected">Bull Year</option><option data-asset="./img/svg/share.svg" value="2">Bull Year</option><option data-asset="./img/svg/share.svg" value="3">Bull Year</option></select></div></div><div class="transaction__row"><div class="transaction__item form__item"><label for="formAmount" class="transaction__label form__label">Amount</label><div class="transaction__input form__input input input--amount"><div class="input__img"><img class="input__img-icon" src="./img/cryptocurrency/tether.svg" alt="token"></div><input id="formAmount" type="text" value="15 000.95" class="input__control"> <span class="input__text">USDT</span></div><div class="form__label-bottom form__label-bottom--right"><div class="form__label-bottom-text form__label-bottom-text--blue">Minimum quantity: 0.5 BTC</div></div></div></div><div class="transaction__item form__item"><div class="transaction__label form__label">Staking adress</div><div class="transaction__input form__input input"><svg class="input__icon input__icon--clip"><use xlink:href="img/sprite.svg#clip"></use></svg> <input type="text" name="" value="0x029njg847n874n48902900" class="input__control"> <button class="input__icon-btn"><svg class="input__icon input__icon--copy"><use xlink:href="img/sprite.svg#copy"></use></svg></button></div><div class="form__label-bottom"><div class="form__label-bottom-text form__label-bottom-text--blue">Network fee: 10 TRX</div></div></div></div><button class="transaction__button button" data-path="staking-plan" data-animation="fadeInUp">Stake</button></form></div><!-- Staking plan--><div class="modal__container modal__container--plan" role="dialog" aria-modal="true" data-target="staking-plan"><button class="modal__close js-modal-close" aria-label="close modal"><svg class="modal__close-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button><form action="#" class="transaction transaction--plan form"><div class="transaction__right"><img src="./img/logo.svg" class="transaction__right-logo"></div><div class="transaction__body"><div class="transaction__title">Staking plan:<br>BTC Bull Year</div><div class="transaction__interest staking-interest staking-interest--plan"><p class="staking-interest__rate staking-interest__rate--plan">Staking interest rate: 15%</p><p class="staking-interest__conditions">Special conditions: <span>Only for new users</span></p></div><div class="transaction__plan staking-plan"><h3 class="staking-plan__title">Minimum quantity: 0.5 BTC</h3><div class="staking-plan__details"><h4 class="staking-plan__details-title">Plan duration:</h4><div class="staking-plan__details-item"><p class="staking-plan__details-text">Start: 06.08. 2024 12.00</p><spam>—</spam><p class="staking-plan__details-text">End: 06.08. 2025 12.00</p></div></div><div class="staking-plan__details"><h4 class="staking-plan__details-title">Staking duration:</h4><p class="staking-plan__details-text">1 year — 5 years</p></div></div><div class="transaction__actions"><button class="transaction__button button button--transparent js-modal-close">Cancel</button> <button class="transaction__button button">Stake Now</button></div></div></form></div></div></div></body><style>.buttons {
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Модальные окна</title>
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <div class="container-modal">
+    <div class="buttons">
+      <button class="button" data-path="send"
+        data-animation="fadeInUp">Send</button>
+      <button class="button" data-path="recieve"
+        data-animation="fadeInUp">Recieve</button>
+      <button class="button" data-path="swap"
+        data-animation="fadeInUp">Swap</button>
+      <button class="button" data-path="stake"
+        data-animation="fadeInUp">Stake</button>
+    </div>
+
+    <div class="modal">
+
+      <!-- Send transaction -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="send">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <form action="#" class="transaction form">
+          <div class="transaction__title">Send transaction</div>
+          <div class="transaction__date">Date: 06.08. 2024 12.00</div>
+          <div class="transaction__items">
+
+            <div class="transaction__item form__item">
+              <div class="transaction__label form__label">From</div>
+              <div class="transaction__input form__input input">
+                <svg class="input__icon input__icon--clip">
+                  <use xlink:href="img/sprite.svg#clip"></use>
+                </svg>
+                <input type="text" name="" value="0x029njg847n874n48902900" class="input__control">
+              </div>
+            </div>
+            <div class="transaction__item form__item">
+              <div class="transaction__label form__label">To</div>
+              <div class="transaction__input form__input input">
+                <svg class="input__icon input__icon--clip">
+                  <use xlink:href="img/sprite.svg#clip"></use>
+                </svg>
+                <input type="text" name="" value="0x029njg847n874n48902900" class="input__control">
+              </div>
+            </div>
+
+            <div class="transaction__row col-2">
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Network</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/svg/share.svg" value="1" selected>N-chain
+                  </option>
+                  <option data-asset="./img/svg/share.svg" value="2">N-chain</option>
+                  <option data-asset="./img/svg/share.svg" value="3">N-chain</option>
+                </select>
+              </div>
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Token</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected>Bitcoin
+                    (BTC)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option>
+                  <option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="transaction__row">
+              <div class="transaction__item form__item">
+                <label for="formAmount" class="transaction__label form__label">Amount</label>
+                <div class="transaction__input form__input input input--amount">
+                  <div class="input__img">
+                    <img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token">
+                  </div>
+                  <input id="formAmount" type="text" value="0.000497" class="input__control">
+                  <span class="input__text">BTC</span>
+                </div>
+                <div class="form__label-bottom col-2">
+                  <div class="form__label-bottom-text  form__label-bottom-text--blue">Network fee: 10 TRX</div>
+                  <a href="" class="form__label-bottom-link">All</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="transaction__button button" data-path="authenticator" data-animation="fadeInUp">Send</button>
+        </form>
+      </div>
+
+      <!-- Send transaction code-->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="authenticator">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+
+        <form action="#" class="transaction form">
+          <div class="transaction__title">Open your Google Authenticator</div>
+
+          <div class="transaction__authentification authentification">
+            <label class="transaction__authentification-label authentification__label">Code</label>
+            <div class="transaction__authentification-inputs authentification__inputs">
+              <input type="text" name="" class="authentification__input">
+              <input type="text" name="" class="authentification__input">
+              <input type="text" name="" class="authentification__input">
+              <input type="text" name="" class="authentification__input">
+              <input type="text" name="" class="authentification__input">
+              <input type="text" name="" class="authentification__input">
+            </div>
+          </div>
+          <div class="transaction__actions">
+            <button class="transaction__button button button--transparent" data-path="send"
+              data-animation="fadeInUp">Back</button>
+            <button class="transaction__button button" data-path="report-send"
+              data-animation="fadeInUp">Confirm</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Send transaction report-->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="report-send">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <div class="transaction">
+          <div class="transaction__title">Send transaction</div>
+          <div class="transaction__date">Date: 06.08. 2024 12.00</div>
+          <div class="transaction__report report">
+            <div class="report__title">-1000 TRX</div>
+            <ul class="report__items">
+              <li class="report__item">
+                <h4 class="report__item-title">Status:</h4>
+                <p class="report__item-status report__item-status--failed">Payment failed</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Recipient adress:</h4>
+                <p class="report__item-text">0×029njg847n874n48902900</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Network fee:</h4>
+                <p class="report__item-text">10 TRX</p>
+              </li>
+            </ul>
+          </div>
+          <button class="transaction__button button">More Details</button>
+        </div>
+      </div>
+
+      <!-- Recieve transaction -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="recieve">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <form action="#" class="transaction form">
+          <div class="transaction__title">Recieve transaction</div>
+          <div class="transaction__date">Date: 06.08. 2024 12.00</div>
+          <img src="./img/qr-code.svg" class="transaction__image" alt="qr-code">
+          <div class="transaction__items">
+
+            <div class="transaction__item form__item">
+              <div class="transaction__label form__label">Sender Address</div>
+              <div class="transaction__input form__input input">
+                <svg class="input__icon input__icon--clip">
+                  <use xlink:href="img/sprite.svg#clip"></use>
+                </svg>
+                <input type="text" name="" value="0x029njg847n874n48902900" class="input__control">
+                <button class="input__icon-btn">
+                  <svg class="input__icon input__icon--copy">
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="transaction__row col-2">
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Network</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/svg/share.svg" value="1" selected>N-chain
+                  </option>
+                  <option data-asset="./img/svg/share.svg" value="2">N-chain</option>
+                  <option data-asset="./img/svg/share.svg" value="3">N-chain</option>
+                </select>
+              </div>
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Token</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected>Bitcoin
+                    (BTC)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option>
+                  <option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="transaction__row">
+              <div class="transaction__item form__item">
+                <label for="formAmount" class="transaction__label form__label">Add</label>
+                <div class="transaction__input form__input input input--amount">
+                  <div class="input__img">
+                    <img class="input__img-icon" src="./img/cryptocurrency/bitcoin.svg" alt="token">
+                  </div>
+                  <input id="formAmount" type="text" value="0.000497" class="input__control">
+                  <span class="input__text">BTC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="transaction__button button" data-path="report-recieve" data-animation="fadeInUp">Share</button>
+        </form>
+      </div>
+
+      <!-- Recieve transaction report-->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="report-recieve">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <div class="transaction">
+          <div class="transaction__title">Send transaction</div>
+          <div class="transaction__date">Date: 06.08. 2024 12.00</div>
+          <div class="transaction__report report">
+            <div class="report__title">+15 000 USDT</div>
+            <ul class="report__items">
+              <li class="report__item">
+                <h4 class="report__item-title">Status:</h4>
+                <p class="report__item-status report__item-status--progress">In Progress</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Recipient adress:</h4>
+                <p class="report__item-text">0×029njg847n874n48902900</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Network fee:</h4>
+                <p class="report__item-text">10 TRX</p>
+              </li>
+            </ul>
+          </div>
+          <button class="transaction__button button">More Details</button>
+        </div>
+      </div>
+
+      <!-- Swap transaction code-->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="swap">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <div class="transaction">
+          <div class="transaction__title">Swap transaction</div>
+          <div class="transaction__date">Date: 06.08. 2024 12.00</div>
+          <ul class="transaction__amounts">
+            <li class="transaction__amount transaction__amount--blue">
+              <p class="transaction__amount-crypto">-0.5 BTC</p>
+              <p class="transaction__amount-usd">$ 33 551</p>
+            </li>
+            <li class="transaction__amount transaction__amount--green">
+              <p class="transaction__amount-crypto">+9,63 ETH</p>
+              <p class="transaction__amount-usd">$ 33 607</p>
+            </li>
+          </ul>
+          <div class="transaction__report transaction__report--swap report report--swap">
+            <ul class="report__items">
+              <li class="report__item">
+                <h4 class="report__item-title">Status:</h4>
+                <p class="report__item-status report__item-status--completed">Completed</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Exchange rate:</h4>
+                <p class="report__item-text">1,00 Bitcoin = 19,21 Ethereum</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Sender adress (btc):</h4>
+                <p class="report__item-text">0×029njg847n874n48902900</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Recipient adress:</h4>
+                <p class="report__item-text">0×029njg847n874n48902900</p>
+              </li>
+              <li class="report__item">
+                <h4 class="report__item-title">Network fee:</h4>
+                <p class="report__item-text">0 (offchain)</p>
+              </li>
+            </ul>
+          </div>
+          <button class="transaction__button button">My Account</button>
+        </div>
+      </div>
+
+      <!-- New staking -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="stake">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <img src="./img/logo-aside.svg" class="modal__logo"></img>
+        <form action="#" class="transaction form">
+          <div class="transaction__title">Stake transaction</div>
+          <div class="transaction__interest staking-interest">
+            <p class="staking-interest__rate">Staking interest rate: 15%</p>
+            <div class="staking-interest__date">
+              <p class="staking-interest__start">Start: 06.08. 2024 12.00</p>
+              <spam class="staking-interest__dash">—</spam>
+              <p class="staking-interest__end">End: 06.08. 2025 12.00</p>
+            </div>
+          </div>
+          <div class="transaction__items">
+            <div class="transaction__row col-2">
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Token</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/cryptocurrency/bitcoin.svg" value="BTC" selected>Bitcoin
+                    (BTC)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/bnb.svg" value="BNB">BNB (BNB)</option>
+                  <option data-asset="./img/cryptocurrency/tether.svg" value="tether">Tether (USDT)
+                  </option>
+                  <option data-asset="./img/cryptocurrency/ethereum.svg" value="ethereum">Ethereum (ETH)
+                  </option>
+                </select>
+              </div>
+              <div class="transaction__item form__item">
+                <div class="transaction__label form__label">Plan</div>
+                <select name="network" class="form__select form__select--border">
+                  <option data-asset="./img/svg/share.svg" value="1" selected>Bull Year
+                  </option>
+                  <option data-asset="./img/svg/share.svg" value="2">Bull Year</option>
+                  <option data-asset="./img/svg/share.svg" value="3">Bull Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="transaction__row">
+              <div class="transaction__item form__item">
+                <label for="formAmount" class="transaction__label form__label">Amount</label>
+                <div class="transaction__input form__input input input--amount">
+                  <div class="input__img">
+                    <img class="input__img-icon" src="./img/cryptocurrency/tether.svg" alt="token">
+                  </div>
+                  <input id="formAmount" type="text" value="15 000.95" class="input__control">
+                  <span class="input__text">USDT</span>
+                </div>
+                <div class="form__label-bottom form__label-bottom--right">
+                  <div class="form__label-bottom-text form__label-bottom-text--blue ">Minimum quantity: 0.5 BTC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transaction__item form__item">
+              <div class="transaction__label form__label">Staking adress</div>
+              <div class="transaction__input form__input input">
+                <svg class="input__icon input__icon--clip">
+                  <use xlink:href="img/sprite.svg#clip"></use>
+                </svg>
+                <input type="text" name="" value="0x029njg847n874n48902900" class="input__control">
+                <button class="input__icon-btn">
+                  <svg class="input__icon input__icon--copy">
+                    <use xlink:href="img/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="form__label-bottom">
+                <div class="form__label-bottom-text  form__label-bottom-text--blue">Network fee: 10 TRX
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="transaction__button button" data-path="staking-plan" data-animation="fadeInUp">Stake</button>
+        </form>
+      </div>
+
+      <!-- Staking plan-->
+      <div class="modal__container modal__container--plan" role="dialog" aria-modal="true" data-target="staking-plan">
+        <button class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form action="#" class="transaction transaction--plan form">
+          <div class="transaction__right">
+            <img src="./img/logo.svg" class="transaction__right-logo"></img>
+          </div>
+          <div class="transaction__body">
+            <div class="transaction__title">Staking plan: <br>
+              BTC Bull Year</div>
+            <div class="transaction__interest staking-interest staking-interest--plan">
+              <p class="staking-interest__rate staking-interest__rate--plan">Staking interest rate: 15%</p>
+              <p class="staking-interest__conditions">Special conditions: <span>Only for new users</span></p>
+            </div>
+            <div class="transaction__plan staking-plan">
+              <h3 class="staking-plan__title">Minimum quantity: 0.5 BTC</h3>
+              <div class="staking-plan__details">
+                <h4 class="staking-plan__details-title">Plan duration:</h4>
+                <div class="staking-plan__details-item">
+                  <p class="staking-plan__details-text">Start: 06.08. 2024 12.00</p>
+                  <spam>—</spam>
+                  <p class="staking-plan__details-text">End: 06.08. 2025 12.00</p>
+                </div>
+              </div>
+              <div class="staking-plan__details">
+                <h4 class="staking-plan__details-title">Staking duration: </h4>
+                <p class="staking-plan__details-text">1 year — 5 years</p>
+              </div>
+            </div>
+            <div class="transaction__actions">
+              <button class="transaction__button button button--transparent js-modal-close">Cancel</button>
+              <button class="transaction__button button">Stake Now</button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+<style>
+  .buttons {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -9,4 +469,8 @@
   }
   .container-modal {
     padding: 50px;
-  }</style></html>
+  }
+
+</style>
+
+</html>
