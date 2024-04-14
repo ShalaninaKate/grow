@@ -5303,30 +5303,6 @@ select:focus-visible + .select__item {
   min-height: 5.3125rem;
   background-color: rgba(63, 1, 144, 0.9);
 }
-@media (max-width: 48rem) {
-  .header-main._header-scroll .header-main__container {
-    -webkit-column-gap: 1.25rem;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    row-gap: 0;
-    min-height: 3.75rem;
-  }
-}
-@media (max-width: 48em) {
-  .header-main._header-scroll .header-main__actions {
-    display: none;
-  }
-}
-@media (max-width: 48em) {
-  .header-main._header-scroll .menu {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/span 1;
-  }
-}
 .header-main__container {
   padding: 0 3.75rem;
   display: -ms-grid;
@@ -5745,7 +5721,7 @@ select:focus-visible + .select__item {
 @media (max-width: 31.25em) {
   .hero__action {
     width: 100%;
-    height: 3.125rem;
+    height: 3.75rem;
   }
 }
 .hero__picture {
@@ -6666,6 +6642,12 @@ select:focus-visible + .select__item {
   height: 1.5rem;
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
+}
+@media (max-width: 48em) {
+  .footer__socials-icon {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
 }
 .footer__socials-icon:active, .footer__socials-icon:focus-visible {
   fill: var(--green);
