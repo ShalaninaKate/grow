@@ -1026,7 +1026,10 @@ setTimeout(() => {
     });
   }
 }, 0);
-headerScroll();
+const header = document.querySelector('header.header-main');
+if (header) {
+  headerScroll();
+}
 
 /***/ }),
 
