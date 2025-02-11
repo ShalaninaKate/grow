@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Presale</title>
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Vaground.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+  <div class="sidebar__logo">
+    <a href="#" class="logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+  </div>
+  <nav class="sidebar__nav nav">
+    <ul class="nav__list nav__list--presale">
+      <li class="nav__item nav__item--account">
+        <a href="#" class="nav__link active">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#account-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--history">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#history-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav__item--swap">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#swap-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item nav-icon--stake">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#stake-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--faq">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#faq-icon"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="nav__item nav__item--faq">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon nav__link-icon--lock">
+            <use xlink:href="img/sprite.svg#lock-open"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--settings">
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#settings-icon"></use>
+          </svg>
+
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link ">
+          <svg class="nav__link-icon">
+            <use xlink:href="img/sprite.svg#exit-icon"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</aside>
+
+    <div class="page">
+      <header class="header">
+  <a href="#" class="header__logo"><img src="./img/logo-aside.svg" alt="logo"></a>
+
+  <div class="header__actions">
+    <button class="notification">
+      <svg class="notification__icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </button>
+    <button type="button" class="connect-btn button button--transparent">Connect Wallet</button>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="presale">
+          <div class="presale__column">
+            <div class="growth presale-card ">
+              <div class="growth__header">
+                <img src="./img/logo-presale.svg" alt="logo" class="growth__header-icon">
+                <h2 class="growth__header-title">Growth <span>GRWT</span></h2>
+              </div>
+              <div class="growth__price balance-growth">
+                <span class="balance-growth__title">Current Price</span>
+                <div class="balance-growth__amount">$0.0059</div>
+              </div>
+              <div class="growth__stats stats">
+                <div class="stats__item">
+                  <span class="stats__title">Network</span>
+                  <ul class="stats__asset">
+                    <li class="stats__asset-item">
+                      <img src="./img/cryptocurrency/bnb-icon.svg" alt="bnb" class="stats__asset-icon">
+                    </li>
+                  </ul>
+                </div>
+                <div class="stats__item">
+                  <span class="stats__title">Trade couples</span>
+                  <ul class="stats__asset">
+                    <li class="stats__asset-item">
+                      <img src="./img/cryptocurrency/tether-icon.svg" alt="tether" class="stats__asset-icon">
+                    </li>
+                    <li class="stats__asset-item">
+                      <img src="./img/cryptocurrency/dai.svg" alt="dai" class="stats__asset-icon">
+                    </li>
+                    <li class="stats__asset-item">
+                      <img src="./img/cryptocurrency/usdc.svg" alt="usdc" class="stats__asset-icon">
+                    </li>
+                    <li class="stats__asset-item">
+                      <img src="./img/cryptocurrency/bnb-icon.svg" alt="bnb" class="stats__asset-icon">
+                    </li>
+                  </ul>
+                </div>
+                <div class="stats__item">
+                  <span class="stats__title">Total Supply</span>
+                  <div class="stats__amount">
+                    <span class="stats__value">12 000 000 000</span>
+                    <span class="stats__currency">GRWT</span>
+                  </div>
+                </div>
+                <div class="stats__item">
+                  <span class="stats__title">Pre-Sale Supply</span>
+                  <div class="stats__amount">
+                    <span class="stats__value">3 000 000 000</span>
+                    <span class="stats__currency">GRWT</span>
+                  </div>
+                </div>
+              </div>
+              <div class="growth__stage stage">
+                <h3 class="stage__title">Stage 1</h3>
+                <div class="stage__progress  progress-stage">
+                  <div class="progress-stage__bar" style="width: 20%;">
+                    <span class="progress-stage__label">20%</span>
+                  </div>
+                </div>
+                <div class="stage__descr">
+                  <div class="stage__descr-amount">
+                    <div class="stage__descr-value">100 000 / 1 000 000</div>
+                    <span class="stage__descr-currency">GRWT</span>
+                  </div>
+                  <div class="stage__descr-apr">300% APR</div>
+                </div>
+
+              </div>
+              <div class="growth__description">
+                <h3 class="growth__description-title">Description</h3>
+                <p class="growth__description-text">
+                  Ipsum porttitor nam pellentesque nunc proin nisl. Neque et nunc mauris a hac. Erat tortor sit id diam
+                  pharetra. In morbi sed sed diam orci elit quis. Tellus nunc vel imperdiet sit hendrerit aliquam arcu
+                  arcu hac. Mauris at turpis amet auctor volutpat. Massa cursus vitae et fermentum quis proin in
+                  pharetra
+                  tempus. Gravida elit in sed in et.
+
+                </p>
+              </div>
+              <div class="growth__tiers tiers">
+                <div class="tiers__row">
+                  <div class="tiers__items tiers__items--title">
+                    <div class="tiers__item">Status</div>
+                    <div class="tiers__item">Staking % per year</div>
+                    <div class="tiers__item">GRTW amount</div>
+                  </div>
+                </div>
+                <div class="tiers__row">
+                  <div class="tiers__items">
+                    <div class="tiers__item">Silver</div>
+                    <div class="tiers__item">18%</div>
+                    <div class="tiers__item">4 000 — 30 000</div>
+                  </div>
+                </div>
+                <div class="tiers__row">
+                  <div class="tiers__items">
+                    <div class="tiers__item">Gold</div>
+                    <div class="tiers__item">30%</div>
+                    <div class="tiers__item">30 001 — 60 000</div>
+                  </div>
+                </div>
+                <div class="tiers__row">
+                  <div class="tiers__items">
+                    <div class="tiers__item">Platinum</div>
+                    <div class="tiers__item">42%</div>
+                    <div class="tiers__item">60 001 — 80 000</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="presale__column">
+            <div class="growth-buy presale-card presale-card--buy">
+              <h2 class="growth-buy__title">Buy GRWT</h2>
+              <div class="growth-buy__balance balance-growth">
+                <span class="balance-growth__title">Balance</span>
+                <div class="balance-growth__amount">450 <span class="balance-growth__currency">GRWT</span></div>
+              </div>
+              <form action="#" class="growth-buy__form form">
+                <div class="growth-buy__items">
+                  <div class="growth-buy__item form__item">
+                    <div class="growth-buy__label form__label">Address</div>
+                    <div class="growth-buy__input form__input input">
+                      <svg class="input__icon input__icon--clip">
+                        <use xlink:href="img/sprite.svg#clip"></use>
+                      </svg>
+                      <input type="text" name="" value="0x029njg847n874n48902900" class="input__control">
+                      <button class="input__icon-btn">
+                        <svg class="input__icon input__icon--copy">
+                          <use xlink:href="img/sprite.svg#copy"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="growth-buy__item form__item">
+                    <div class="growth-buy__label form__label">Amount</div>
+                    <div class="growth-buy__input form__input input input--amount">
+                      <div class="input__img">
+                        <img class="input__img-icon" src="./img/cryptocurrency/tether-icon.svg" alt="token">
+                      </div>
+                      <input type="text" value="1 000" class="input__control">
+                      <span class="input__text">USDT</span>
+                    </div>
+                    <div class="form__label-bottom form__label-bottom--right">
+                      <span class="form__label-bottom-text">Min 2 000 GRWT</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="growth-buy__item form__item">
+                  <div class="growth-buy__label form__label">GRWT</div>
+                  <div class="growth-buy__input form__input input input--amount">
+                    <div class="input__img">
+                      <img class="input__img-icon" src="./img/logo-presale.svg" alt="logo">
+                    </div>
+                    <input type="text" value="100 000" class="input__control">
+                    <span class="input__text">GRWT</span>
+                  </div>
+                </div>
+                <button class="growth-buy__button button">Buy</button>
+              </form>
+            </div>
+            <div class="conditions presale-card presale-card--conditions">
+              <h2 class="conditions__title">Pre-Sale Conditions</h2>
+              <div class="conditions__items">
+                <div class="conditions__item">
+                  <h3 class="conditions__item-title">Vesting</h3>
+                  <div class="conditions__item-graph">
+                    <img class="conditions__item-chart" src="./img/svg/conditions-chart-1.svg" alt="graph">
+                    <img class="conditions__item-circle" src="./img/circle.svg" alt="graph">
+                    <div class="conditions__item-text">10%<span>GRWT</span></div>
+                  </div>
+                </div>
+                <div class="conditions__item">
+                  <h3 class="conditions__item-title">Pre-Sale End</h3>
+                  <div class="conditions__item-graph">
+                    <img class="conditions__item-chart" src="./img/svg/conditions-chart-2.svg" alt="graph">
+                    <img class="conditions__item-circle" src="./img/circle.svg" alt="graph">
+                    <div class="conditions__item-text">74%<span>GRWT</span></div>
+                  </div>
+                </div>
+                <div class="conditions__item">
+                  <h3 class="conditions__item-title">GRWT Min buy</h3>
+                  <div class="conditions__item-graph">
+                    <img class="conditions__item-chart" src="./img/svg/conditions-chart-3.svg" alt="graph">
+                    <img class="conditions__item-circle" src="./img/circle.svg" alt="graph">
+                    <div class="conditions__item-text">2k<span>GRWT</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="presale__column presale__column--staking">
+            <div class="staking-presale presale-card">
+              <div class="staking-presale__header">
+                <h2 class="staking-presale__title">Staking</h2>
+                <div class="staking-presale__status">
+                  <span class="staking-presale__status-title">Status:</span>
+                  <span class="staking-presale__status-text">Gold</span>
+                </div>
+              </div>
+              <div class="staking-presale__info">
+                <div class="staking-presale__balance balance-growth">
+                  <span class="balance-growth__title">Balance for staking</span>
+                  <div class="balance-growth__amount">120 <span class="balance-growth__currency">GRWT</span></div>
+                </div>
+                <div class="staking-presale__profit balance-growth">
+                  <span class="balance-growth__title">Profit</span>
+                  <div class="balance-growth__amount">16 000 <span class="balance-growth__currency">GRWT</span></div>
+                </div>
+              </div>
+              <form action="#" class="staking-presale__form form">
+
+                <div class="staking-presale__item form__item">
+                  <div class="staking-presale__label form__label">Amount tokens for staking</div>
+                  <div class="staking-presale__input form__input input input--amount">
+                    <input type="text" value="16 000" class="input__control">
+                  </div>
+                </div>
+                <div class="staking-presale__actions">
+                  <button class="staking-presale__button button button--blue">Stake</button>
+                  <button class="staking-presale__button button">Claim</button>
+                  <button class="staking-presale__button button button--transparent">Unstake</button>
+                </div>
+              </form>
+            </div>
+            <div class="transactions-presale presale-card">
+              <div class="transactions-presale__table table">
+                <h2 class="transactions-presale__title table__title">
+                  Last Transactions
+                </h2>
+                <div class="transactions-presale__content table__content">
+                  <div class="table__row">
+                    <ul class="transactions-presale__items table__items table__items--title">
+                      <li class="table__item">Amount</li>
+                      <li class="table__item">$</li>
+                      <li class="table__item">Date</li>
+                      <li class="table__item">Type</li>
+                      <li class="table__item">Status</li>
+                      <li class="table__item hidden-500">Available</li>
+                    </ul>
+                  </div>
+                  <div data-simplebar class="transactions-presale__body table__body simplebar">
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Claim</li>
+                        <li class="table__item table__item--completed">Completed</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Staking</li>
+                        <li class="table__item table__item--completed">Completed</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
