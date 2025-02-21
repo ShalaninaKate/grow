@@ -180,13 +180,15 @@
               <div class="growth__description">
                 <h3 class="growth__description-title">Description</h3>
                 <p class="growth__description-text">
-                  Ipsum porttitor nam pellentesque nunc proin nisl. Neque et nunc mauris a hac. Erat tortor sit id diam
+                  Ipsum porttitor nam pellentesque nunc proin nisl. Neque et nunc mauris a hac. Erat tortor sit id
+                  diam
                   pharetra. In morbi sed sed diam orci elit quis. Tellus nunc vel imperdiet sit hendrerit aliquam arcu
                   arcu hac. Mauris at turpis amet auctor volutpat. Massa cursus vitae et fermentum quis proin in
                   pharetra
                   tempus. Gravida elit in sed in et.
 
                 </p>
+
               </div>
               <div class="growth__tiers tiers">
                 <div class="tiers__row">
@@ -250,7 +252,23 @@
                         <img class="input__img-icon" src="./img/cryptocurrency/tether-icon.svg" alt="token">
                       </div>
                       <input type="text" value="1 000" class="input__control">
-                      <span class="input__text">USDT</span>
+                      <button class="select-currency">
+                        <div class="select-currency__title">
+                          <div class="select-currency__value">USDC</div>
+                          <svg class="select-currency__arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                          </svg>
+
+                        </div>
+                        <div class="select-currency__options">
+                          <div class="select-currency__option">
+                            USDT
+                          </div>
+                          <div class="select-currency__option">
+                            BTC
+                          </div>
+                        </div>
+                      </button>
                     </div>
                     <div class="form__label-bottom form__label-bottom--right">
                       <span class="form__label-bottom-text">Min 2 000 GRWT</span>
@@ -306,7 +324,9 @@
                 <h2 class="staking-presale__title">Staking</h2>
                 <div class="staking-presale__status">
                   <span class="staking-presale__status-title">Status:</span>
-                  <span class="staking-presale__status-text">Gold</span>
+                  <span class="staking-presale__status-text gold">Gold</span>
+                  <!-- <span class="staking-presale__status-text silver">Silver</span> -->
+                  <!-- <span class="staking-presale__status-text platinum">Platinum</span> -->
                 </div>
               </div>
               <div class="staking-presale__info">
@@ -391,11 +411,268 @@
                         <li class="table__item hidden-500">01.01.24</li>
                       </ul>
                     </div>
-
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">
+                          Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions-presale__items table__items">
+                        <li class="table__item table__item--grwt">1000 GRWT</li>
+                        <li class="table__item">$ 0.1</li>
+                        <li class="table__item">01.01.24</li>
+                        <li class="table__item">Buying</li>
+                        <li class="table__item table__item--processing">
+                          Processing</li>
+                        <li class="table__item hidden-500">01.01.24</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="presale__column presale__column--roadmap">
+            <div class="roadmap roadmap--mob presale-card">
+              <h2 class="roadmap__title">
+                Roadmap
+              </h2>
+              <div class="roadmap__items ">
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q1 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Developing tokenomics and shaping the mechanics of «GRWT» steaking
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q2 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Development of smart contracts for «GRWT» token and launch of MVP
+                    version of «Growt Wallet» product
+                  </p>
+                </div>
+
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q3 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Development of applications for IOS and Android
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q4 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Conducting audits of smart contracts
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q5 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Listing of «GRWT» token on CEX
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q6 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Launch applications for IOS and Android
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q7 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Expansion of supported networks in «GRWT» wallet 
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q8 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Increased wallet security 
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q9 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">Growt Wallet 2.0: updated app with artificial intelligence support
+                  </p>
+                </div>
+                <div class="roadmap__item">
+                  <div class="roadmap__item-title">Q10 2025</div>
+                  <span class="roadmap__item-line"></span>
+                  <p class="roadmap__item-text">New token utilities
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="roadmap roadmap--line presale-card ">
+              <h2 class="roadmap__title">
+                Roadmap
+              </h2>
+              <svg class="roadmap__line" width="" height="" viewBox="0 0 995 757" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 142.95L857.449 142.95C923.475 142.95 977 196.474 977 262.5V262.5" stroke="#3E0190"
+                  stroke-width="5" stroke-linecap="round" />
+                <path
+                  d="M22.5 501V501C22.5 435.653 75.474 382.679 140.821 382.679L857.449 382.679C923.475 382.679 977 329.155 977 263.129V263.129"
+                  stroke="#00DE93" stroke-width="5" stroke-linecap="round" />
+                <path
+                  d="M25 495.957C25 494.576 23.8807 493.457 22.5 493.457C21.1193 493.457 20 494.576 20 495.957L25 495.957ZM978.768 616.046C979.744 615.069 979.744 613.486 978.768 612.51L962.858 596.6C961.881 595.624 960.299 595.624 959.322 596.6C958.346 597.576 958.346 599.159 959.322 600.136L973.464 614.278L959.322 628.42C958.346 629.396 958.346 630.979 959.322 631.955C960.299 632.932 961.881 632.932 962.858 631.955L978.768 616.046ZM140.821 616.778L977 616.778L977 611.778L140.821 611.778L140.821 616.778ZM20 495.957C20 562.684 74.0933 616.778 140.821 616.778L140.821 611.778C76.8547 611.778 25 559.923 25 495.957L20 495.957Z"
+                  fill="#00DE93" />
+
+                <circle cx="17.5" cy="142.949" r="17.5" fill="#3E0190" />
+                <foreignObject x="0" y="90" width="198" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q1 2025</div>
+                    <p class="roadmap__item-text">Developing tokenomics and shaping the mechanics of «GRWT»
+                      steaking
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="17.5" cy="142.949" r="6.5" fill="white" />
+
+                <circle cx="297.5" cy="142.949" r="17.5" fill="#3E0190" />
+                <foreignObject x="280.5" y="90" width="254" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q2 2025</div>
+                    <p class="roadmap__item-text">Development of smart contracts for «GRWT» token and launch of MVP
+                      version
+                      of «Growt Wallet» product
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="297.5" cy="142.949" r="6.5" fill="white" />
+
+                <circle cx="633.5" cy="142.949" r="17.5" fill="#3E0190" />
+                <foreignObject x="616.5" y="90" width="211" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q3 2025</div>
+                    <p class="roadmap__item-text">Development of applications for IOS and Android
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="633.5" cy="142.949" r="6.5" fill="white" />
+
+                <circle cx="794.5" cy="381.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="777.5" y="329.949" width="181" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q4 2025</div>
+                    <p class="roadmap__item-text">Conducting audits of smart contracts
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="794.5" cy="381.949" r="6.5" fill="white" />
+
+                <circle cx="611.5" cy="381.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="594" y="329.949" width="135" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q5 2025</div>
+                    <p class="roadmap__item-text">Listing of «GRWT» token on CEX
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="611.5" cy="381.949" r="6.5" fill="white" />
+
+                <circle cx="407.5" cy="381.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="390" y="329.949" width="165" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q6 2025</div>
+                    <p class="roadmap__item-text">Launch applications for IOS and Android
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="407.5" cy="381.949" r="6.5" fill="white" />
+
+                <circle cx="157.5" cy="381.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="140" y="329.949" width="195" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q7 2025</div>
+                    <p class="roadmap__item-text">Expansion of supported networks in «GRWT» wallet 
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="157.5" cy="381.949" r="6.5" fill="white" />
+
+                <circle cx="157.5" cy="613.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="140" y="563" width="135" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q8 2025</div>
+                    <p class="roadmap__item-text">Increased wallet security 
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="157.5" cy="613.949" r="6.5" fill="white" />
+
+                <circle cx="401.5" cy="613.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="384" y="563" width="250" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q9 2025</div>
+                    <p class="roadmap__item-text">Growt Wallet 2.0: updated app with artificial intelligence support
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="401.5" cy="613.949" r="6.5" fill="white" />
+                <circle cx="760.5" cy="613.949" r="17.5" fill="#00DE93" />
+                <foreignObject x="743" y="563" width="110" height="170">
+                  <div class="roadmap__item">
+                    <div class="roadmap__item-title">Q10 2025</div>
+                    <p class="roadmap__item-text">New token utilities
+                    </p>
+                  </div>
+                </foreignObject>
+                <circle cx="760.5" cy="613.949" r="6.5" fill="white" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+        <div class="presale__tokenomics tokenomics presale-card ">
+          <h2 class="tokenomics__title">Tokenomics</h2>
+          <div class="tokenomics__chart">
+            <img src="./img/tokenomics.svg" alt="" class="tokenomics__image">
           </div>
         </div>
       </main>
